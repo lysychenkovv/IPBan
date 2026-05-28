@@ -51,7 +51,7 @@ Please note that for IPBan Pro, you can find install instructions at https://ipb
 - Fail2Ban but for Windows!
 - Easy one click install, open admin powershell and run:
 ```
-$ProgressPreference = 'SilentlyContinue'; [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/DigitalRuby/IPBan/master/IPBanCore/Windows/Scripts/install_latest.ps1'))
+$ProgressPreference = 'SilentlyContinue'; [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/lysychenkovv/IPBan/master/IPBanCore/Windows/Scripts/install_latest.ps1'))
 ```
 Note: Powershell 5.1 or greater is required.
 
@@ -61,7 +61,7 @@ The installer script supports additional parameters for customization. Due to Po
 
 **Installation with custom startup type:**
 ```powershell
-$ProgressPreference = 'SilentlyContinue'; [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; iex "& { $((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/DigitalRuby/IPBan/master/IPBanCore/Windows/Scripts/install_latest.ps1')) } -startupType 'delayed-auto'"
+$ProgressPreference = 'SilentlyContinue'; [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; iex "& { $((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/lysychenkovv/IPBan/master/IPBanCore/Windows/Scripts/install_latest.ps1')) } -startupType 'delayed-auto'"
 ```
 
 Replace `'delayed-auto'` with `'auto'` if you want the service to start immediately on boot (provides immediate protection but may have compatibility issues).
